@@ -1,0 +1,9 @@
+def f():
+    i=0
+    while(True):
+        i += 1
+        yield i
+
+a = f()
+for ij in range(100):
+    print(next(a))
